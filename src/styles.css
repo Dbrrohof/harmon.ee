@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 body {
     margin: 0;
 }
 * {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
