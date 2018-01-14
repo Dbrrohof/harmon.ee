@@ -4,16 +4,24 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
+import { SearchComponent } from './search/search.component';
+import { BrowseComponent } from './browse/browse.component';
+import { CollectionComponent } from './collection/collection.component';
 
 // Routes
 const appRoutes: Routes = [
-  // { path: 'crisis-center', component:  }
+  { path: 'search', component: SearchComponent },
+  { path: 'browse', component: BrowseComponent },
+  { path: 'collection', component: CollectionComponent }
 ];
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponent,
+    BrowseComponent,
+    CollectionComponent
   ],
   imports: [
     BrowserModule,

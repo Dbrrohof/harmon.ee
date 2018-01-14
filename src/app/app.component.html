@@ -1,12 +1,20 @@
 <div class="container-main">
-  <div class="grid-item sidebar">
-    <h3>Harmon.ee</h3>
-    <hr>
-    <input class="sidebar-search" type="text" placeholder="Search">
-    <i class="fa fa-search" aria-hidden="true"></i>
-    <hr>
-    <p><a class="sidebar-link" href="">Browse</a></p>
-    <p><a class="sidebar-link" href="">Your Music</a></p>
+  <div class="sidebar">
+    <div class="sidebar-head">
+      <h2>harmon.ee</h2>
+    </div>
+    <div class="sidebar-content">
+      <p><a class="sidebar-link" routerLink="/search" [routerLinkActive]="'is-active'">Search</a></p>
+      <p><a class="sidebar-link" routerLink="/browse" [routerLinkActive]="'is-active'">Browse</a></p>
+      <p><a class="sidebar-link" routerLink="/collection" [routerLinkActive]="'is-active'">Your Music</a></p>
+    </div>
   </div>
-  <div class="grid-item">2</div>
+  <div class="grid-item main-view">
+    <router-outlet></router-outlet>
+    <!-- Routed views go here -->
+  </div>
+</div>
+<div class="container-player">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
 </div>
